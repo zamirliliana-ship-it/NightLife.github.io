@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - NightLife</title>
+    <!-- Fuentes e Iconos -->
+    <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <!-- En tu index.html y formulario.html -->
+<div class="contenedor-logo-final" style="display: inline-flex; align-items: center; gap: 10px;">
+    <div class="cuadro-luna" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); display: flex; justify-content: center; align-items: center; border-radius: 4px;">
+        <img src="image/logo.png" alt="Logo" style="width: 25px; height: auto;">
+    </div>
+    <span class="texto-logo" style="color: #ff00ff; font-weight: 900; font-size: 24px; text-shadow: 0 0 10px #ff00ff;">NIGHTLIFE</span>
+</div>
+
+</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">VIP</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+        </ul>
+        <button class="boton-login">Iniciar Sesión</button>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+   <main class="contenedor-principal">
+    <div class="glass-card">
+
+    <form action="https://api.web3forms.com/submit" method="POST">
+    <!-- 1. TU LLAVE (Indispensable) -->
+    <input type="hidden" name="access_key" value="79766479-de42-4e22-b3b6-31a228a10036">
+
+    <!-- 2. NOMBRES (En una fila) -->
+    <div class="fila">
+        <div class="col">
+            <label>Primer Nombre</label>
+            <input type="text" name="p_nombre" placeholder="Nombre" required>
+        </div>
+        <div class="col">
+            <label>Segundo Nombre</label>
+            <input type="text" name="s_nombre" placeholder="Opcional">
+        </div>
+    </div>
+
+    <!-- 3. APELLIDOS (En una fila) -->
+    <div class="fila">
+        <div class="col">
+            <label>Primer Apellido</label>
+            <input type="text" name="p_apellido" placeholder="Apellido" required>
+        </div>
+        <div class="col">
+            <label>Segundo Apellido</label>
+            <input type="text" name="s_apellido" placeholder="Opcional">
+        </div>
+    </div>
+
+    <!-- 4. CORREO -->
+    <label>Correo Electrónico</label>
+    <input type="email" name="email" placeholder="ejemplo@correo.com" required>
+
+    <!-- 5. TELÉFONO Y PAÍS -->
+    <div class="fila">
+        <div class="col">
+            <label>Teléfono</label>
+           <select name="tel">
+            <option value="+57">+57</option>
+            <option value="+52">+52</option>
+            <option value="+54">+54</option>
+            <option value="+55">+55</option>
+            <option value="+593">+593</option>
+            <option value="+595">+595</option>
+            <option value="+51">+51</option>
+            <option value="+598">+598</option>
+            <option value="+58">+58</option>
+            <option value="+34">+34</option>
+            <option value="+49">+49</option>
+            <option value="+43">+43</option>
+            <option value="+32">+32</option>
+            <option value="+359">+359</option>
+            <option value="+45">+45</option>
+            <option value="+372">+372</option>
+            <option value="+358">+358</option>
+            <option value="+33">+33</option>
+            <option value="+30">+30 </option>
+            <option value="+353">+353</option>
+            <option value="+39">+39</option>
+            <option value="+352">+352</option>
+            <option value="+31">+31</option>
+            <option value="+351">+351</option>
+            <option value="+44">+44</option>
+            <option value="+41">+41</option>
+            <option value="+90">+90</option>
+            <option value="+7">+7</option>
+            <option value="+81">+81</option>
+            <option value="+82">+82</option>
+           </select>
+        </div>
+        <div class="col">
+            <label>País</label>
+            <select name="pais">
+                <option value="colombia">Colombia</option>
+                <option value="mexico">México</option>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="chile">Chile</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="paraguay">Paraguay</option>
+                <option value="peru">Perú</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="espana">España</option>
+                <option value="alemania">Alemania</option>
+                <option value="austria">Austria</option>
+                <option value="belgica">Bélgica</option>
+                <option value="bulgaria">Bulgaria</option>
+                <option value="dinamarca">Dinamarca</option>
+                <option value="estonia">Estonia</option>
+                <option value="finlandia">Finlandia</option>
+                <option value="francia">Francia</option>
+                <option value="grecia">Grecia</option>
+                <option value="irlanda">Irlanda</option>
+                <option value="italia">Italia</option>
+                <option value="luxemburgo">Luxemburgo</option>
+                <option value="paises-bajos">Países Bajos</option>
+                <option value="portugal">Portugal</option>
+                <option value="reino-unido">Reino Unido</option>
+                <option value="suiza">Suiza</option>
+                <option value="turquia">Turquía</option>
+                <option value="rusia">Rusia</option>
+                <option value="japon">Japón</option>
+                <option value="corea-del-sur">Corea del Sur</option>   
+            </select>
+        </div>
+    </div>
+    
+
+    <!-- 6. BOTÓN DE ENVÍO -->
+    <button type="submit" class="btn-enviar">Enviar</button>
+</form>
+    </div>
+</main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-division">
+            <div class="footer-bottom-links">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+                <a href="formulario.html">Contacto</a>
+                <a href="#">Soporte</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

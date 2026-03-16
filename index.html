@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NightLife - Descubre la Noche</title>
+    <link rel="stylesheet" href="inicio.css">
+    <link rel="icon" type="image/png" href="image/logo.png" />
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar">
+        <!-- En tu index.html y formulario.html -->
+<div class="contenedor-logo-final" style="display: inline-flex; align-items: center; gap: 10px;">
+    <div class="cuadro-luna" style="width: 40px; height: 40px; background: rgba(255,255,255,0.1); display: flex; justify-content: center; align-items: center; border-radius: 4px;">
+        <img src="image/logo.png" alt="Logo" style="width: 25px; height: auto;">
+    </div>
+    <span class="texto-logo" style="color: #ff00ff; font-weight: 900; font-size: 24px; text-shadow: 0 0 10px #ff00ff;">NIGHTLIFE</span>
+</div>
+
+
+        <div class="nav-buscador">
+            <i class="fas fa-buscador"></i>
+            <input type="text" placeholder="Buscar eventos, discoteca, VIP o discoteca...">
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Eventos</a></li>
+            <li><a href="#">Discoteca</a></li>
+            <li><a href="#">VIP</a></li>
+            <li><a href="#">Promociones</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+        </ul>
+        <button class="boton-login">Iniciar Sesión</button>
+
+    </nav>
+
+    <!--hero-->
+    <section class="hero">
+        <div class="hero-contenido">
+            <span class="hero-badge">Las noches más loca de tu vida</span>
+            <h1>Descubre las mejores noches de tu vida <br>
+                <span class="highlight">Clubes y Eventos</span> <br>
+                en tu ciudad
+            </h1>
+
+            <p>Accede a las discotecas mas candentes y iconicas,
+                reserva mesas VIP y consigue entradas para los eventos mas exclusivos de tu ciudad</p>
+            </p>
+
+            <div class="hero-acciones">
+                <button class="boton-primario"><i class="fas fa-ticket-alt"></i>
+                    Explorar Eventos
+                </button>
+
+                <button class="boton-secundario"><i class="fas fa-map-marker-alt"></i>
+                    Ver discotecas
+                </button>
+                <div class="contenedor-stats">
+                  <div class="hero-stat">
+                     <strong>+500</strong>
+                     <span>Discotecas</span>
+                  </div>
+
+                  <div class="stat-division"></div>
+
+                  <div class="hero-stat">
+                    <strong>+1000</strong>
+                    <span>Eventos</span>
+                  </div>
+
+                  <div class="stat-division"></div>
+
+                  <div class="hero-stat">
+                    <strong>+50k</strong>
+                     <span>Usuarios</span>
+                  </div>
+                </div>
+              </div>
+
+        </div>    
+
+        <div class="hero-imagen">
+            <img src="image/discoteca.jpg" alt="Imagen de discoteca" width="300px" height="300px">
+        </div>
+    </section>
+
+    <!-- FIESTAS DESTACADAS -->
+<section class="fiestas">
+  <div class="fiestas-header">
+    <div>
+      <h2>Fiestas Destacadas</h2>
+      <p>Los eventos más exclusivos de esta semana</p>
+    </div>
+    <a href="#">Ver todos →</a>
+  </div>
+
+  <div class="fiestas-grid">
+
+    <div class="fiesta-card">
+      <div class="fiesta-img">
+        <img src="image/Techno.png" alt="Techno Warehouse" />
+      </div>
+      <div class="fiesta-info">
+        <h3>Techno Warehouse</h3>
+        <p class="fiesta-lugar">Berlin Style • Vie 22:00</p>
+        <button class="btn-entradas">Entradas</button>
+      </div>
+    </div>
+
+    <div class="fiesta-card">
+      <div class="fiesta-img">
+        <img src="image/reggaeton.png" alt="Summer Reggaeton" />
+      </div>
+      <div class="fiesta-info">
+        <h3>Summer Reggaeton</h3>
+        <p class="fiesta-lugar">Tropical Club • Sáb 23:30</p>
+        <button class="btn-entradas">Entradas</button>
+      </div>
+    </div>
+
+    <div class="fiesta-card">
+      <div class="fiesta-img">
+        <img src="image/deep house vibe.png" alt="Deep House Vibes" />
+      </div>
+      <div class="fiesta-info">
+        <h3>Deep House Vibes</h3>
+        <p class="fiesta-lugar">Ocean Lounge • Vie 21:00</p>
+        <button class="btn-entradas">Entradas</button>
+      </div>
+    </div>
+
+    <div class="fiesta-card">
+      <div class="fiesta-img">
+        <img src="image/elite vip night.png" alt="Elite VIP Night" />
+      </div>
+      <div class="fiesta-info">
+        <h3>Elite VIP Night</h3>
+        <p class="fiesta-lugar">The Palace • Sáb 22:00</p>
+        <button class="btn-entradas">Entradas</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EXPLORAR POR GÉNERO -->
+<section class="generos">
+  <div class="generos-header">
+    <h2>Explorar por Género</h2>
+    <p>Encuentra el ritmo que te mueve</p>
+  </div>
+
+  <div class="generos-grid">
+
+    <div class="genero-card">
+      <div class="genero-icono"><i class="fas fa-microchip"></i></div>
+      <span>Techno</span>
+    </div>
+
+    <div class="genero-card">
+      <div class="genero-icono"><i class="fas fa-compact-disc"></i></div>
+      <span>Reggaeton</span>
+    </div>
+
+    <div class="genero-card">
+      <div class="genero-icono"><i class="fas fa-microphone"></i></div>
+      <span>Hip Hop</span>
+    </div>
+
+    <div class="genero-card">
+      <div class="genero-icono"><i class="fas fa-star"></i></div>
+      <span>Pop</span>
+    </div>
+
+  </div>
+</section>
+
+    <!--banner-->
+    <section class="banner">
+        <div class="banner-contenido">
+            <h2>¿Listo para vivir la noche?</h2>
+            <p>Únete a NightLife y descubre las mejores noches de tu vida. Reserva tu lugar en los eventos más
+                exclusivos y accede a las discotecas más icónicas de tu ciudad.</p>
+            <div class="banner-acciones">
+                <button class="boton-primario">Crear Cuenta gratis</button>
+                <button class="boton-secundario">Ver planes VIP</button>
+            </div>
+        </div>
+    </section>
+
+<footer class="footer">
+  <div class="footer-division">
+    <div class="footer-bottom-links">
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+      <a href="formulario.html">Contacto</a>
+      <a href="#">Soporte</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

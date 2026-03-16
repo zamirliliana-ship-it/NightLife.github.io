@@ -1,0 +1,324 @@
+/* RESET GENERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* FONDO DE LA PÁGINA */
+body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #0c0014; /* Color de respaldo si no carga la imagen */
+        }
+
+        main {
+            flex: 1; /* Estira el contenido para empujar el footer al fondo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+            /* Aquí pones tu imagen de concierto */
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image/portada.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+/* CAPA OSCURA PARA QUE SE LEA EL TEXTO */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 0, 20, 0.75); /* Morado muy oscuro transparente */
+    z-index: -1;
+}
+
+
+
+::placeholder {
+    color: #555555 !important;
+    opacity: 1; /* Para que en Firefox no se vea clarito */
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;                /* Pone todo en una fila */
+    justify-content: space-between; /* Separa el logo, los links y el botón */
+    align-items: center;          /* Los centra verticalmente para que no se vean chuecos */
+    padding: 15px 8%;            /* Da espacio a los lados */
+    background-color: #1a0026;    /* Tu color morado oscuro */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Importamos la fuente gruesa para que no se vea delgada */
+@import url('https://fonts.googleapis.com');
+
+.contenedor-logo-final {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espacio exacto entre el cuadro y el texto */
+    text-decoration: none;
+}
+
+/* El cuadrito de la luna como en la imagen */
+.cuadro-luna {
+    background-color: rgba(255, 255, 255, 0.08); /* Cuadro sutilmente más claro que el fondo */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px; /* Esquinas apenas redondeadas */
+}
+
+.cuadro-luna i {
+    color: #ff00ff; /* Rosa neón de la imagen */
+    font-size: 20px;
+}
+
+/* El texto NIGHTLIFE potente */
+.texto-logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900; /* Letra super gruesa */
+    font-size: 26px; /* Tamaño imponente */
+    color: #ff00ff; /* El color exacto de tu referencia */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    /* Un ligero brillo para que resalte, pero sin exagerar */
+    text-shadow: 0 0 5px rgba(255, 0, 255, 0.3);
+}
+
+
+.contenedor-principal {
+    display: flex;             /* Activa el modo flexible */
+    justify-content: center;    /* Centra horizontalmente (izquierda a derecha) */
+    align-items: center;        /* Centra verticalmente (arriba a abajo) */
+    min-height: 90vh;           /* Le da altura para que el centro sea el real de la pantalla */
+    padding: 40px 20px;
+}
+
+.glass-card {
+    width: 100%;
+    max-width: 650px;           /* Evita que se estire demasiado en pantallas grandes */
+    margin: 0 auto;             /* Refuerzo para centrado manual */
+}
+
+
+.boton-login {
+    background-color: #ff00ff; /* Color fucsia */
+    color: white;              /* Texto blanco */
+    padding: 10px 25px;        /* Espacio interno para que sea grande */
+    border: none;              /* Quita el borde negro feo */
+    border-radius: 12px;       /* Redondea las esquinas */
+    font-weight: bold;         /* Letra gruesa */
+    cursor: pointer;           /* Cambia la flecha por la manito al pasar el mouse */
+}
+
+.nav-links {
+    display: flex;                /* Pone los links (Inicio, Eventos...) en fila */
+    list-style: none;             /* Quita los puntos de la lista */
+    gap: 25px;                    /* Da espacio entre cada palabra */
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    color: #ff00ff;
+}
+
+.footer {
+    background: #1a0026; /* El morado oscuro de tu imagen */
+    padding: 40px 8%;
+    width: 100%;
+    margin-top: auto; /* Empuja el footer hacia abajo si el contenido es poco */
+}
+
+.footer-division {
+    width: 100%;
+    border-top: 1px solid rgba(255, 0, 255, 0.15); /* La línea delgada */
+    padding-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-bottom-links a {
+    font-size: 0.9rem;
+    color: #b39ddb; /* Color lila suave */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-bottom-links a:hover {
+    color: #ff00ff; /* Rosa neón al pasar el mouse */
+}
+
+/* CONTENEDOR DEL FORMULARIO (ESTILO CRISTAL) */
+.contenedor-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+@media (max-width: 768px) {
+    /* 1. Ajustamos el Navbar para que no se amontone */
+    .navbar {
+        padding: 15px 5%;
+        flex-direction: column; /* Pone logo arriba y botones abajo */
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        font-size: 0.8rem;
+    }
+
+    /* 2. El Logo se hace un poco más pequeño para celular */
+    .texto-logo {
+        font-size: 20px;
+    }
+
+    .cuadro-luna {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* 3. ¡IMPORTANTE! Las filas de nombres pasan a ser una sola columna */
+    .fila-inputs {
+        flex-direction: column;
+        gap: 0; /* Elimina el espacio lateral para que no se vea chueco */
+    }
+
+    /* 4. Reducimos el tamaño del formulario para que no toque los bordes del móvil */
+    form {
+        padding: 25px 20px;
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    /* 5. Ajuste de inputs para que sean fáciles de tocar con el dedo */
+    input, select {
+        padding: 10px;
+        font-size: 16px; /* Evita que el iPhone haga zoom automático */
+    }
+}
+
+
+form {
+    background: rgba(255, 255, 255, 0.05); /* Cristal transparente */
+    backdrop-filter: blur(15px); /* Desenfoque de fondo */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 650px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px #ff00ff;
+}
+
+/* ESTILO DE LAS ETIQUETAS */
+label {
+    display: block;
+    color: #000000; /* Esto pone las palabras en NEGRO */
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* INPUTS OSCUROS Y ELEGANTES (ADIÓS AL BLANCO) */
+input,
+input[type=email],
+input[type=tel],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #ffffff; /* Fondo blanco para que resalte el texto negro */
+    color: #000000;      /* Texto que escribe el usuario en NEGRO */
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+}
+
+/* FILAS PARA NOMBRES Y APELLIDOS */
+.fila-inputs {
+    display: flex;
+    gap: 20px;
+}
+
+.columna {
+    flex: 1;
+}
+
+/* BOTÓN ENVIAR NEÓN */
+button[type=submit], input[type=submit] {
+    width: 100%;
+    background: linear-gradient(45deg, #ff00ff, #7a00ff);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+}
+
+button[type=submit]:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.6);
+}
+
+/* DISEÑO PARA CELULARES */
+@media (max-width: 768px) {
+    .fila-inputs {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    form {
+        padding: 25px;
+    }
+}
